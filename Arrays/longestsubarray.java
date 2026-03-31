@@ -4,23 +4,29 @@ public class longestsubarray {
         int[] arr= {1,4,1,3,1,1,2,1,4};
         int n= arr.length;
         int req=5;
-        int min=0,max=0;
+        
         // bruteforce 
-        int diff=0;
-        for (int i=0; i<n ; i++){
-            for (int j=i; j<n ; j++){
-                int sum=0;
-                for (int k=i; k<=j; k++){
-                    sum+=arr[k];
+        // int min=0,max=0;
+        // int diff=0;
+        // for (int i=0; i<n ; i++){
+        //     for (int j=i; j<n ; j++){
+        //         int sum=0;
+        //         for (int k=i; k<=j; k++){
+        //             sum+=arr[k];
 
-                }
-                if (sum == req && j-i>diff){
-                    diff=j-i;
-                    min =i;
-                    max =j;
-                }
-            }
+        //         }
+        //         if (sum == req && j-i>diff){
+        //             diff=j-i;
+        //             min =i;
+        //             max =j;
+        //         }
+        //     }
+        // }
+        // System.err.println("The sub array is "+ min + max );
+        int temp[]= new int[n];
+        // using prefix sum 
+        for (int i=0 ; i<n ; i++){
+            for (int j=i;)
         }
-        System.err.println("The sub array is "+ min + max );
     }
 }
